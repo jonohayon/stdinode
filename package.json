@@ -1,0 +1,25 @@
+{
+  "name": "stdinode",
+  "version": "1.0.0",
+  "description": "A command line utility to run simple scripts that get an input from stdin",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonohayon/stdinode.git"
+  },
+  "keywords": [
+    "stdin",
+    "cli",
+    "node"
+  ],
+  "author": "Jonathan Ohayon <me@jonathano.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonohayon/stdinode/issues"
+  },
+  "homepage": "https://github.com/jonohayon/stdinode#readme",
+  "dependencies": {}
+}
