@@ -106,6 +106,7 @@ class BetterStdin {
       const types = values.map(v => typeof v).filter(v => v !== 'object')
       if (types.length > 0) {
         try {
+
           return JSON.parse(values.join('\n'))
         } catch (err) {}
       }
