@@ -22,12 +22,13 @@ const loadFile = filename => {
 
 // No need for an external library for these options
 const argv = process.argv.splice(2)
-const cliActions = async () => {
+const cliActions = () => {
   const opt = argv[0]
   if (opt === '-e' || opt === '--eval') {
     const code = argv[1]
-    const result = await evalStdinode(code)
-    console.log(result)
+    return evalStdinode(code).then(result => {
+      console.log(result)
+    }).catch(e => { throw e })
   } else if (opt === '-h' || opt === '--help') {
     const { version } = require('./package.json')
     // I don't really like the whole backticks thingy
@@ -43,9 +44,11 @@ const cliActions = async () => {
     ].join('\n'))
   } else {
     const filename = argv[0]
-    const file = await loadFile(filename)
-    const result = await evalStdinode(file)
-    console.log(result)
+    return loadFile(filename).then(file => {
+      return evalStdinode(file)
+    }).then(result => {
+      console.log(result)
+    }).catch(e => { throw e })
   }
 }
 
