@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * index.js
  * This file holds the actual stdinode CLI + exports the BetterStdin instance.
