@@ -1,6 +1,6 @@
 {
   "name": "stdinode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A command line utility to run simple scripts that get an input from stdin",
   "main": "index.js",
   "scripts": {
