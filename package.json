@@ -6,6 +6,9 @@
   "scripts": {
     "test": "jest"
   },
+  "bin": {
+    "stdinode": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jonohayon/stdinode.git"
@@ -20,6 +23,5 @@
   "bugs": {
     "url": "https://github.com/jonohayon/stdinode/issues"
   },
-  "homepage": "https://github.com/jonohayon/stdinode#readme",
-  "dependencies": {}
+  "homepage": "https://github.com/jonohayon/stdinode#readme"
 }
